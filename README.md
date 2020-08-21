@@ -6,7 +6,7 @@
 
 ## Description
 
-This program prints out a list of numbers from 1 to the number entered by the user, however if a number contains a "1" it prints "beep", if it contains a "2" it prints "boop" and if it contains a "3" it prints "Won't you be my neighbor?"
+This program prints out a list of numbers from 0 to the number entered by the user, however if a number contains a "1" it prints "beep", if it contains a "2" it prints "boop" and if it contains a "3" it prints "Won't you be my neighbor?"
 
 ## Link To Active Site:
 https://janetkarpenske.github.io/mr-roboger/
@@ -14,11 +14,37 @@ https://janetkarpenske.github.io/mr-roboger/
 ## Specifications
 |Specs| Description | Input Example | Output |
 |--|-------------|---------------|--------|
-|1| Program pushes all numbers up to the inputed number into an array and returns it. | Input = 3 | return inputArray = [1, 2, 3] |
+|1| Program returns a range of numbers from 0 to the input number. | Input = 3 | return numbers = 0, 1, 2, 3 |
 |2| If a number contains a 1 the entire number is replaced with "beep". | 10 | "beep" |
 |3| If a number contains a 2 the entire number is replaced with "boop". | 42 | "boop" |
 |4| If a number contains a 3 the entire number is replaced with "Won't you be my neighbor?" | 34 | "Won't you be my neighbor?" |
 |5| If a number contains more than one of these special numbers, the rule for 3 will take precedence over the rule for 2, and 2 will take precedence over 1. | 23 | "Won't you be my neighbor?"|
+
+## Tests
+### Test 1
+Describe: roboger() </br>
+Test: "It returns a range of numbers up to the input number." </br>
+Expect(roboger(5)).toEqual(0, 1, 2, 3, 4, 5);
+
+### Test 2
+Describe: roboger() </br>
+Test: "It returns "beep" if a number contains a 1." </br>
+Expect(roboger(10)).toEqual(0, Beep, 2, 3, 4, 5, 6, 7, 8, 9, Beep);
+
+### Test 3
+Describe: roboger() </br>
+Test: "It returns "boop" if a number contains a 2." </br>
+Expect(roboger(6)).toEqual(0, Beep, Boop, 3, 4, 5, 6);
+
+### Test 4
+Describe: roboger() </br>
+Test: "It returns "Won't you be my neighbor?" if a number contains a 3." </br>
+Expect(roboger(10)).toEqual(0, Beep, Boop, Won't you be my neighbor?, 4, 5, 6);
+
+### Test 5
+Describe: roboger() </br>
+Test: "It returns numbers with respect to the number 3 taking priority, then 2, then 1." </br>
+Expect(roboger(10)).toEqual(0, Beep, Boop, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep);
 
 ## Setup/Installation Requirements
 
