@@ -20,4 +20,20 @@ function roboger(num) {
   return numArray.join(", ")
 }
 
-console.log(roboger(30));
+$(document).ready(function() {
+  $("#form").submit(function(event) {
+    event.preventDefault();
+    $("#result").hide();
+    const input = parseInt($("input#number").val());
+    let robogerized;
+    if (input >= 0) {
+      robogerized = roboger(input);
+    }
+    else {
+      alert("Please enter a valid number.")
+      return false;
+    }
+    $("#result").text(robogerized);
+    $("#result").show();
+  })
+})
