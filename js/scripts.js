@@ -9,6 +9,9 @@ function roboger(num) {
       numArray[j] = "Beep!";
       console.log("There's a 1 here");
     }
+    else if (number.indexOf('2') > -1) {
+      numArray[j] = "Boop!";
+    }
     j++
   })
   return numArray.join(", ")
