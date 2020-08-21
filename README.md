@@ -48,7 +48,8 @@ Expect(roboger(10)).toEqual(0, Beep, Boop, Won't you be my neighbor?, 4, 5, 6, 7
 
 ## Setup/Installation Requirements
 
-* Download or Clone project from Github repository. Open index.html file with live server.
+* Download or Clone project from Github repository (click button that says "Clone" or "Download") OR click link to view the active site located in README.md file (see above). 
+* If cloned/downloaded: Open index.html file with live server to view webpage, OR open scripts.js, styles.css, or index.html to view code.
 
 ## Known Bugs
 
@@ -56,7 +57,7 @@ No Known Bugs
 
 ## Support and contact details
 
-https://github.com/janetkarpenske / https://github.com/StollerSystem
+https://github.com/janetkarpenske
 
 ## Technologies Used
 
@@ -66,4 +67,4 @@ Javascript, HTML, and CSS were used in the creation of this project. Bootstrap a
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2016 **Ben Stoller, Janet Karpenske**# _Pig Latin Translator_
+Copyright (c) 2016 **Ben Stoller, Janet Karpenske** _Mr. Roboger's Neighborhood_
