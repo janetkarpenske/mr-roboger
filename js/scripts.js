@@ -7,10 +7,12 @@ function roboger(num) {
   numArray.forEach(function(number) {
     if (number.indexOf('1') > -1) {
       numArray[j] = "Beep!";
-      console.log("There's a 1 here");
     }
     else if (number.indexOf('2') > -1) {
       numArray[j] = "Boop!";
+    }
+    else if (number.indexOf('3') > -1) {
+      numArray[j] = "Won't you be my neighbor?";
     }
     j++
   })
