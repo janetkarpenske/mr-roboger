@@ -23,7 +23,7 @@ function roboger(num) {
 $(document).ready(function() {
   $("#form").submit(function(event) {
     event.preventDefault();
-    $("#result").hide();
+    $(".result").hide();
     const input = parseInt($("input#number").val());
     let robogerized;
     if (input >= 0) {
@@ -33,7 +33,7 @@ $(document).ready(function() {
       alert("Please enter a valid number.")
       return false;
     }
-    $("#result").text(robogerized);
-    $("#result").show();
+    $(".result").text(robogerized);
+    $(".result").show();
   })
 })
