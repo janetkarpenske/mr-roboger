@@ -67,4 +67,4 @@ Javascript, HTML, and CSS were used in the creation of this project. Bootstrap a
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2016 **Ben Stoller, Janet Karpenske** _Mr. Roboger's Neighborhood_
+Copyright (c) 2016 **Janet Karpenske** _Mr. Roboger's Neighborhood_
