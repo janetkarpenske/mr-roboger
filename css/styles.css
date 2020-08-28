@@ -1,3 +1,11 @@
+#myVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 body {
   background-image: url("../img/city.jpg");
   background-color: rgb(182, 220, 255);
@@ -6,11 +14,11 @@ body {
   text-align: center;
 }
 a {
-  color: rgb(102, 27, 163);
+  color: rgb(128, 16, 219);
 }
 a:hover, a:visited {
   color: rgb(87, 0, 128);
-  text-shadow: 3px 3px 6px rgb(255, 94, 0);
+  text-shadow: 3px 3px 6px rgb(81, 3, 105);
   text-decoration: none;
 }
 h1 {
@@ -18,13 +26,14 @@ h1 {
   padding: 10px;
   font-family: 'MuseoModerno', cursive;
   font-size: 70px;
-  text-shadow: 5px 5px 6px rgb(255, 72, 0);
+  text-shadow: 5px 5px 6px rgb(116, 8, 126);
 }
 p {
   font-size: 20px;
   margin-top: 25px;
 }
 .container {
+  position: relative;
   padding: 50px;
   padding-bottom: 100px;
   background-color: white;
@@ -38,13 +47,11 @@ img {
   padding: 50px;
   font-size: 20px;
 }
-
 #form {
   padding: 20px;
 }
-
 .btn {
   margin-top: 20px;
-  background-color: rgb(255, 94, 0);
+  background-color: rgb(71, 4, 102);
   color: white;
 }
