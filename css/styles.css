@@ -5,20 +5,22 @@
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 60%;
 }
 body {
   background-image: url("../img/city.jpg");
   background-color: rgb(182, 220, 255);
+  color: rgb(255, 255, 255);
 }
 #author {
   text-align: center;
 }
-a {
-  color: rgb(128, 16, 219);
-}
+/* a {
+  color: rgb(144, 206, 29);
+} */
 a:hover, a:visited {
-  color: rgb(87, 0, 128);
-  text-shadow: 3px 3px 6px rgb(81, 3, 105);
+  color: rgb(217, 136, 255);
+  text-shadow: 3px 3px 6px rgb(242, 197, 255);
   text-decoration: none;
 }
 h1 {
@@ -26,7 +28,8 @@ h1 {
   padding: 10px;
   font-family: 'MuseoModerno', cursive;
   font-size: 70px;
-  text-shadow: 5px 5px 6px rgb(116, 8, 126);
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 5px 6px rgb(247, 112, 1);
 }
 p {
   font-size: 20px;
@@ -36,7 +39,7 @@ p {
   position: relative;
   padding: 50px;
   padding-bottom: 100px;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 img {
   float: right;
@@ -54,4 +57,12 @@ img {
   margin-top: 20px;
   background-color: rgb(71, 4, 102);
   color: white;
+}
+#reverseButton {
+  background-color: rgb(231, 56, 3);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  border: outset;
+  border-radius: 50%;
+  padding: 20px;
 }
