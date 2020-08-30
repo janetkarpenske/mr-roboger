@@ -14,7 +14,7 @@ https://janetkarpenske.github.io/mr-roboger/
 ## Specifications
 |Specs| Description | Input Example | Output |
 |--|-------------|---------------|--------|
-|1| Program returns a range of numbers from 0 to the input number. | Input = 3 | return numbers = 0, 1, 2, 3 |
+|1| Program returns a range of numbers from 0 to the input number. | Input = 3 | numbers = 0, 1, 2, 3 |
 |2| If a number contains a 1 the entire number is replaced with "beep". | 10 | "beep" |
 |3| If a number contains a 2 the entire number is replaced with "boop". | 42 | "boop" |
 |4| If a number contains a 3 the entire number is replaced with "Won't you be my neighbor?" | 34 | "Won't you be my neighbor?" |
