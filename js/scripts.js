@@ -36,6 +36,11 @@ $(document).ready(function() {
     }
     $(".result").text(robogerized);
     $(".result").show();
+    $("#reverseButton").show();
   })
- 
+  $("#reverseButton").click(function() {
+    let robogerizedReversed = robogerized.split(", ").reverse().join(", ");
+    $(".result").addClass("colorize");
+    $(".result").text(robogerizedReversed);
+  })
 })
