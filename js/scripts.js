@@ -21,11 +21,12 @@ function roboger(num) {
 }
 
 $(document).ready(function() {
+  let robogerized;
   $("#form").submit(function(event) {
     event.preventDefault();
     $(".result").hide();
     const input = parseInt($("input#number").val());
-    let robogerized;
+    // let robogerized;
     if (input >= 0) {
       robogerized = roboger(input);
     }
@@ -36,4 +37,5 @@ $(document).ready(function() {
     $(".result").text(robogerized);
     $(".result").show();
   })
+ 
 })
